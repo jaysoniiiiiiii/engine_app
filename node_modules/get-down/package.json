@@ -1,0 +1,49 @@
+{
+  "name": "get-down",
+  "version": "1.1.0",
+  "description": "Download and optionally extract files",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tschaub/get-down.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tschaub/get-down/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://tschaub.mit-license.org/"
+    }
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt --stack test",
+    "debug-test": "node --stack-trace-limit=50 --debug-brk ./node_modules/.bin/grunt cafemocha",
+    "start": "grunt --stack start"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "grunt": "~0.4.5",
+    "grunt-cafe-mocha": "~0.1.13",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-newer": "~1.1.1",
+    "mock-fs": "~3.1.0",
+    "nock": "0.27.1",
+    "rimraf": "^2.2.8"
+  },
+  "dependencies": {
+    "q": "1.0.0",
+    "graceful-fs": "4.1.2",
+    "junk": "1.0.2",
+    "tar": "1.0.1",
+    "mout": "0.10.0",
+    "decompress-zip": "0.3.0",
+    "tmp": "0.0.27",
+    "request-progress": "0.3.1",
+    "retry": "0.6.1",
+    "request": "2.61.0"
+  }
+}
