@@ -19,7 +19,7 @@ function App() {
       .then((response) => {
         const { lat, lng } = response.data.results[0].geometry;
         setCenter(fromLonLat([lng, lat]));
-        setZoom(3);
+        setZoom(8);
       })
       .catch((error) => console.error(error));
   }, [searchQuery]);
@@ -47,7 +47,7 @@ function App() {
     <div className="App">
       <div>
         <input
-          style={{ width: "100%", height: "30px" }}
+          style={{ width: "100%", height: "100px" }}
           type="text"
           placeholder="Enter a location"
           value={searchQuery}
